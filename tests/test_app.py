@@ -6,7 +6,7 @@ from app import mult_numbers
 # Checks that add_numbers returns the expected sums.
 class TestAddNumbers(unittest.TestCase):
     def test_add_positive(self):
-        self.assertEqual(add_numbers(2, 3), 6)
+        self.assertEqual(add_numbers(2, 3), 5)
 
     def test_add_zero(self):
         self.assertEqual(add_numbers(0, 0), 0)
