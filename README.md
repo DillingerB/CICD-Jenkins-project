@@ -17,3 +17,5 @@ if you want to see each individual test show it works run:
 python -m unittest discover -v
 
 Jenkins pulls this repo, runs the tests, and reports a pass or fail result.
+
+- This portion is a small test of Github Webhook delivery result, please ignore -
