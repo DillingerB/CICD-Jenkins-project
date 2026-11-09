@@ -6,8 +6,12 @@ def add_numbers(a, b):
 def sub_numbers(a, b):
     return a - b
 
+# fuinction that multiples two numbers
+def mult_numbers(a, b):
+    return a * b
 # standard main function to show how addition and subtraction works.
 if __name__ == "__main__":
     print("Application started")
     print("2 + 3 =", add_numbers(2, 3))
     print("2 - 3 =", sub_numbers(2, 3))
+    print("2 - 3 =", mult_numbers(2, 3))

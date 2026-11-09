@@ -1,6 +1,7 @@
 import unittest
 from app import add_numbers
 from app import sub_numbers
+from app import mult_numbers
 
 # Checks that add_numbers returns the expected sums.
 class TestAddNumbers(unittest.TestCase):
@@ -25,7 +26,15 @@ class TestSubNumbers(unittest.TestCase):
     def test_subtract_negative(self):
         self.assertEqual(sub_numbers(-1, 1), -2)
     def test_positive_answer(self):
-        self.assertEqual(sub_numbers(5, 3), 2)    
+        self.assertEqual(sub_numbers(5, 3), 2)
+
+class TestMultNumbers(unittest.TestCase):
+    def test_Multiplie_positive(self):
+        self.assertEqual(mult_numbers(2, 3), 6)
+    def test_Multiplie_zero(self):
+        self.assertEqual(mult_numbers(0, 0), 0)
+    def test_Multiplie_negative(self):
+        self.assertEqual(mult_numbers(-1, 1), -1)
 
 if __name__ == "__main__":
     unittest.main()
